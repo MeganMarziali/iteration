@@ -107,3 +107,14 @@ output = map(list_norm, IQR)
 
 Can basically map any function you want across the input list.
 
+```{r}
+output = map_dbl(list_norm, median)
+```
+
+```{r}
+output = map_df(list_norm, mean_and_sd, .id = "input")
+```
+
+
+
+
